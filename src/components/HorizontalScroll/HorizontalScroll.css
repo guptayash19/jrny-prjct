@@ -1,0 +1,36 @@
+.wrapperH{
+  overflow-x: hidden; 
+  height: 350px;
+  max-height:350px;
+  position:relative; 
+  z-index: 2000000;
+}
+
+.slider{
+    display: flex; 
+    gap:10px; 
+    height:320px;
+    max-height:320px;  
+}
+
+.card {
+    transition: transform 0.1s ease-out;
+    /* transform-origin: center center; */
+      transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+.card{
+    min-width: 360px;
+    height: 300px; 
+    max-height:300px;
+    border-radius: 8px;  
+    color: #333;
+    z-index:2000000;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    /* object-fit: cover; */
+}

@@ -1,0 +1,93 @@
+body { 
+  min-width: 100svw;
+  max-width: 100svw;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  font-family: 'Helvetica Neue'; 
+}
+ 
+html, body {
+  scrollbar-gutter: stable;
+}
+
+
+.header {
+  width: 100%;
+  max-width:100%;
+  overflow:hidden;
+  display: flex;
+  flex-direction: row; /* Explicitly set to row */
+  align-items: center;
+  justify-content: space-between; /* This will space logo and navbar */
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  backdrop-filter: blur(5.6px);
+  -webkit-backdrop-filter: blur(3px);
+  padding: 50px 6rem; /* Combine padding */
+  height: 80px;
+  box-sizing: border-box; /* Include padding in height calculation */
+}
+
+.logo-div {
+  flex: 0 0 auto; /* Don't grow or shrink */
+  /* Add any specific logo sizing if needed */
+}
+
+.navbar-div {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* Align nav to the right */
+}
+
+/* Responsive adjustments */
+@container (max-width: 1024px) {
+  .header {
+    padding: 10px 3rem; /* Reduce padding on smaller screens */
+  }
+}
+
+@container (max-width: 768px) {
+  .header {
+    padding: 10px 2rem;
+    height: 70px; /* Slightly smaller header */
+  }
+}
+ 
+body {
+  container-type: inline-size;
+  width: 100%;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0; /* Important: allow shrinking */
+}
+
+
+.container { 
+  width: 100%;
+  max-width: 100%;
+  min-width: 0; /* Important: allow shrinking */
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+ 
+
+.testimonial-top, .testimonial-span, .caption-title, .our-projects-p,
+.project-second-description,.project-description,
+.about-landing-description, .blog-heading-description,
+.blog-content-area, .services-landing-paragraph,
+.about-us-landing-paragraph, .landing-portfolio-paragraph
+{
+  text-align: center;
+  font-family: 'Helvetica Neue';
+  background: linear-gradient(92.49deg, #7C7C7C 0%, #FFFFFF 47.41%, #7C7C7C 94.82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Makes the background visible through the text */
+  background-clip: text;
+  text-fill-color: transparent; /* Standard property, but -webkit- is more widely supported */
+
+}

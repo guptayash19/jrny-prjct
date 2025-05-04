@@ -1,0 +1,106 @@
+
+
+.project-header{ 
+    min-width:96%;
+
+}
+
+/* Portfolio Container */
+.portfolio-item-header-container{
+    min-width:90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 90svw;
+  min-width: 90svw;
+  padding-top: 1rem;
+}
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+.project-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 30svw;
+}
+
+.project-name{
+  font-family: Armstrong;
+font-weight: 400;
+font-size: 72px;
+line-height: 100%;
+letter-spacing: 0%;
+color: white;
+
+}
+
+.project-name,
+.project-second-header {
+  font-size: 48px;
+  font-family: "Armstrong";
+  color: white;
+
+}
+
+.project-description,
+.project-second-description {
+  text-align: left;
+  max-width: 30svw;
+}
+
+.project-second-description {
+  max-width: 65svw;
+}
+
+.portfolio-item-middle-list {
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    align-items: flex-start;
+}
+
+.might-like {
+  font-family: "Armstrong";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color:white;
+}
+
+.item-date-company{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item-date{
+  font-family: Armstrong;
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #808186;
+}
+
+.item-company{
+  font-family: Helvetica Neue;
+font-weight: 500;
+font-size: 32px;
+line-height: 40px;
+color: #808186
+/* letter-spacing: 0%;
+background-color: linear-gradient(92.49deg, #7C7C7C 0%, #FFFFFF 47.41%, #7C7C7C 94.82%); */
+;
+}

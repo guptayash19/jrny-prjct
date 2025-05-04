@@ -1,0 +1,75 @@
+.blog-item-container{
+    width: 100%;
+    min-height: 100vh;
+    max-width: 100svw;
+    padding: 0 7rem;
+    background-image: url("/bg/about.png");
+    background-position: top right; /* Positions image at the top-left */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-size: auto; /* Keeps original image size */
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.blog-content-box{
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    max-width: 68svw;
+    margin:0 auto; 
+}
+
+.blog-item-header{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%; 
+}
+
+.blog-item-header-utils{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.blog-item-company-name{
+    font-family: 'Armstrong';
+    font-size: 1.1rem;
+    color: white;
+    
+}
+
+.blog-content-title{
+    font-family: 'Armstrong';
+    font-size: 3.5rem;
+    letter-spacing: 0;
+    line-height: 3.5rem;
+}
+
+.blog-content-area{
+    font-size: 1rem;
+    text-align: left;
+    width:100%;
+}
+
+@media(max-width:1000px){
+    .blog-item-container{
+        padding:0;
+        padding: 0 1rem;
+    }
+
+    .blog-content-box{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .blog-content-title{
+        font-size:2rem;
+    }
+
+    .blog-heading-title{
+        font-size: 2.5rem;
+    }
+}
